@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import PageHome from "../../pages/PageHome";
-import PageMovieDetails from "../../pages/PageMovieDetails";
+// import PageMovieDetails from "../../pages/PageMovieDetails";
 import PageSearchMovies from "../../pages/PageSearchMovies";
-import Cast from "../Cast";
+// import Cast from "../Cast";
 import Navigation from "../Navigation/Navigation";
-import Reviews from "../Reviews/Reviews";
+// import Reviews from "../Reviews/Reviews";
 
 function App() {
   return (
