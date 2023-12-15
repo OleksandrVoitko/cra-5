@@ -16,7 +16,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/cra-5/">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
