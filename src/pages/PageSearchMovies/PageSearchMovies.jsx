@@ -28,6 +28,8 @@ const PageSearchMovies = () => {
     }
   }, [currentQuery]);
 
+  console.log(location);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const query = event.currentTarget.elements.inputValue.value;
@@ -69,7 +71,9 @@ const PageSearchMovies = () => {
                     </div>
                     <ItemInfoDiv>
                       <ItemTitleH2>{movie.title}</ItemTitleH2>
-                      <ItemRateSpan>{movie.vote_average}</ItemRateSpan>
+                      <ItemRateSpan>
+                        {movie.vote_average.toFixed(1)}
+                      </ItemRateSpan>
                     </ItemInfoDiv>
                   </RoutItemLink>
                 </ListItemLi>

@@ -22,3 +22,34 @@ export const getSearchedMovies = async (query) => {
     return Promise.reject(new Error(error.message));
   }
 };
+
+export const getMovieDetails = async (movieId) => {
+  try {
+    const response = await axios.get(`movie/${movieId}?api_key=${API_KEY}`);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const getMovieCast = async (movieId) => {
+  try {
+    const responce = await axios.get(
+      `/movie/${movieId}/credits?api_key=${API_KEY}`
+    );
+    return responce.data.cast;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const getMovieReviews = async (movieId) => {
+  try {
+    const response = await axios.get(
+      `movie/${movieId}/reviews?api_key=${API_KEY}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};

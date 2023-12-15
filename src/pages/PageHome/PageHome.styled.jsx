@@ -22,7 +22,7 @@ export const ListItemLi = styled.li`
   justify-content: space-between;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
-  :hover {
+  &:hover {
     cursor: pointer;
     transform: scale(1.03) translateY(-3px);
     box-shadow: 0 5px 10px rgb(0 0 0 / 50%);

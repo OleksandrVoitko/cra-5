@@ -18,6 +18,7 @@ const PageHome = () => {
   useEffect(() => {
     getTrandingMovies().then(setMovies);
   }, []);
+
   return (
     <ContainerDiv>
       <ListUl>
