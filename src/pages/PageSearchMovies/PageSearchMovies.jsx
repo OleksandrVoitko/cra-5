@@ -28,8 +28,6 @@ const PageSearchMovies = () => {
     }
   }, [currentQuery]);
 
-  console.log(location);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const query = event.currentTarget.elements.inputValue.value;
